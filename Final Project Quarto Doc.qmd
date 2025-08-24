@@ -1,0 +1,74 @@
+---
+title: "EPI 590 Final (Quarto)"
+author: "Ava Otoadese"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+**Descriptive Statistics**
+
+-   Read in dataset & save file
+
+-   Create a `{gtsummary}` table of descriptive statistics about your data
+
+```{r}
+install.packages("gtsummary", dependencies = TRUE)
+install.packages("here")
+install.packages("tidyverse")
+
+#route and print ebola dataset 
+ebola <-(here::here("data", "ebola.csv"))
+ebola <- read.csv("data/ebola.csv")
+
+#create a full descriptive table for ebola dataset
+library(gtsummary)
+tbl_summary(
+  ebola,
+  by = Country,
+  include = c(Indicator, Date, value)) #too long
+
+#create a descriptive table for ebola dataset for variables indicator and value by country
+library(gtsummary)
+tbl_summary(
+  ebola,
+  by = Country,
+  include = c(Indicator, value))
+
+```
+
+`@tbl-one` contains descriptive statistics for the ebola dataset for all variables by Country
+
+@tbl-two contains descriptive statistics for the ebola dataset for variables "value" and "Indicator" by Country
+
+-   Fit a regression and present well-formatted results from the regression
+
+```{r}
+#create a regression for ebola dataset using gtsummary
+tbl_uvregression(
+  ebola, 
+  y = value,
+  include = c(Country, Indicator,
+              Date, value),
+  method = lm)
+```

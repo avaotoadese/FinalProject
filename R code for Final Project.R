@@ -31,6 +31,4 @@ tbl_uvregression(
 #FIX this ^^
 
 
-hist(ebola$value)
-
   
