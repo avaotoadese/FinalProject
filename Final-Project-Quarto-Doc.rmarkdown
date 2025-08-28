@@ -1,5 +1,5 @@
 ---
-title: "EPI 590 Final Quarto"
+title: "EPI 590 Final (Quarto)"
 author: "Ava Otoadese"
 format: html
 editor: visual
@@ -102,3 +102,4 @@ There are `` `r stats$n` `` data entries with a mean age of `` `r stats$mean_val
     ```
 
 There were \`r nrow(ebola)\` data entries
+

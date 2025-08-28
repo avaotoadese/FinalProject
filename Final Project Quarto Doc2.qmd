@@ -74,7 +74,7 @@ tbl_uvregression(
   method = lm)
 ```
 
-@tbl-two contains univariate regression results from the ebola dataset
+`@tbl-two` contains univariate regression results from the ebola dataset
 
 -   Create a figure
 
@@ -89,7 +89,7 @@ tbl_uvregression(
 -   Create a function
 
 ```{r}
-stats <- list(n = nrow(data),
+stats <- list(n = nrow(ebola),
               mean_value = mean(ebola$value))
 ```
 
@@ -101,4 +101,10 @@ There are `` `r stats$n` `` data entries with a mean age of `` `r stats$mean_val
     inline_text(table1, variable = "Indicator", level = "Case fatality rate (CFR) of confirmed Ebola cases", column = "Italy")
     ```
 
-There were \`r nrow(ebola)\` data entries
+There were `r nrow(ebola)` data entries
+
+Save file with {here} package
+
+```{r}
+write_rds(ebola, here::here("data", "ebolafinal"))
+```

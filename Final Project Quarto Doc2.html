@@ -8,7 +8,7 @@
 
 <meta name="author" content="Ava Otoadese">
 
-<title>EPI 590 Final (Quarto)</title>
+<title>EPI 590 Final Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,17 +59,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="Final Project Quarto Doc_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Final Project Quarto Doc_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="Final Project Quarto Doc_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="Final Project Quarto Doc_files/libs/quarto-html/popper.min.js"></script>
-<script src="Final Project Quarto Doc_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="Final Project Quarto Doc_files/libs/quarto-html/anchor.min.js"></script>
-<link href="Final Project Quarto Doc_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Final Project Quarto Doc_files/libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="Final Project Quarto Doc_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="Final Project Quarto Doc_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Final Project Quarto Doc_files/libs/bootstrap/bootstrap-2546a5edb573abd25b53f29b13f71942.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="Final Project Quarto Doc2_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Final Project Quarto Doc2_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Final Project Quarto Doc2_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Final Project Quarto Doc2_files/libs/quarto-html/popper.min.js"></script>
+<script src="Final Project Quarto Doc2_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Final Project Quarto Doc2_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Final Project Quarto Doc2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Final Project Quarto Doc2_files/libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Final Project Quarto Doc2_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Final Project Quarto Doc2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Final Project Quarto Doc2_files/libs/bootstrap/bootstrap-2546a5edb573abd25b53f29b13f71942.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -82,7 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">EPI 590 Final (Quarto)</h1>
+<h1 class="title">EPI 590 Final Quarto</h1>
 </div>
 
 
@@ -160,39 +160,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>table1 <span class="ot">&lt;-</span> <span class="fu">tbl_summary</span>(</span>
 <span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  ebola,</span>
 <span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">by =</span> Country,</span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">include =</span> <span class="fu">c</span>(Indicator, value))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><code>@tbl-one</code> contains descriptive statistics for the ebola dataset for variables “value” and “Indicator” by Country</p>
-<ul>
-<li>Fit a regression and present well-formatted results from the regression</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create a regression for ebola dataset using gtsummary</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-two</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl_uvregression</span>(</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  ebola, </span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> value,</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">include =</span> <span class="fu">c</span>(Country, Indicator,</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>              Date, value),</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> lm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">include =</span> <span class="fu">c</span>(Indicator, value))</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>table1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="detdtyqhyt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#detdtyqhyt table {
+<div id="unhhtewqyy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#unhhtewqyy table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#detdtyqhyt thead, #detdtyqhyt tbody, #detdtyqhyt tfoot, #detdtyqhyt tr, #detdtyqhyt td, #detdtyqhyt th {
+#unhhtewqyy thead, #unhhtewqyy tbody, #unhhtewqyy tfoot, #unhhtewqyy tr, #unhhtewqyy td, #unhhtewqyy th {
   border-style: none;
 }
 
-#detdtyqhyt p {
+#unhhtewqyy p {
   margin: 0;
   padding: 0;
 }
 
-#detdtyqhyt .gt_table {
+#unhhtewqyy .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -218,12 +205,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_caption {
+#unhhtewqyy .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#detdtyqhyt .gt_title {
+#unhhtewqyy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -235,7 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#detdtyqhyt .gt_subtitle {
+#unhhtewqyy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -247,7 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#detdtyqhyt .gt_heading {
+#unhhtewqyy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -259,13 +246,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_bottom_border {
+#unhhtewqyy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_col_headings {
+#unhhtewqyy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -280,7 +267,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_col_heading {
+#unhhtewqyy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -300,7 +287,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#detdtyqhyt .gt_column_spanner_outer {
+#unhhtewqyy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -312,15 +299,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#detdtyqhyt .gt_column_spanner_outer:first-child {
+#unhhtewqyy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#detdtyqhyt .gt_column_spanner_outer:last-child {
+#unhhtewqyy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#detdtyqhyt .gt_column_spanner {
+#unhhtewqyy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -332,11 +319,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#detdtyqhyt .gt_spanner_row {
+#unhhtewqyy .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#detdtyqhyt .gt_group_heading {
+#unhhtewqyy .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -362,7 +349,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#detdtyqhyt .gt_empty_group_heading {
+#unhhtewqyy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -377,15 +364,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#detdtyqhyt .gt_from_md > :first-child {
+#unhhtewqyy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#detdtyqhyt .gt_from_md > :last-child {
+#unhhtewqyy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#detdtyqhyt .gt_row {
+#unhhtewqyy .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -404,7 +391,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#detdtyqhyt .gt_stub {
+#unhhtewqyy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -417,7 +404,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#detdtyqhyt .gt_stub_row_group {
+#unhhtewqyy .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -431,15 +418,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#detdtyqhyt .gt_row_group_first td {
+#unhhtewqyy .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#detdtyqhyt .gt_row_group_first th {
+#unhhtewqyy .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#detdtyqhyt .gt_summary_row {
+#unhhtewqyy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -449,16 +436,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#detdtyqhyt .gt_first_summary_row {
+#unhhtewqyy .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_first_summary_row.thick {
+#unhhtewqyy .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#detdtyqhyt .gt_last_summary_row {
+#unhhtewqyy .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -468,7 +455,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_grand_summary_row {
+#unhhtewqyy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -478,7 +465,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#detdtyqhyt .gt_first_grand_summary_row {
+#unhhtewqyy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -488,7 +475,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_last_grand_summary_row_top {
+#unhhtewqyy .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -498,11 +485,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_striped {
+#unhhtewqyy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#detdtyqhyt .gt_table_body {
+#unhhtewqyy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -511,7 +498,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_footnotes {
+#unhhtewqyy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -525,7 +512,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_footnote {
+#unhhtewqyy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -534,7 +521,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#detdtyqhyt .gt_sourcenotes {
+#unhhtewqyy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -548,7 +535,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#detdtyqhyt .gt_sourcenote {
+#unhhtewqyy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -556,72 +543,1176 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#detdtyqhyt .gt_left {
+#unhhtewqyy .gt_left {
   text-align: left;
 }
 
-#detdtyqhyt .gt_center {
+#unhhtewqyy .gt_center {
   text-align: center;
 }
 
-#detdtyqhyt .gt_right {
+#unhhtewqyy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#detdtyqhyt .gt_font_normal {
+#unhhtewqyy .gt_font_normal {
   font-weight: normal;
 }
 
-#detdtyqhyt .gt_font_bold {
+#unhhtewqyy .gt_font_bold {
   font-weight: bold;
 }
 
-#detdtyqhyt .gt_font_italic {
+#unhhtewqyy .gt_font_italic {
   font-style: italic;
 }
 
-#detdtyqhyt .gt_super {
+#unhhtewqyy .gt_super {
   font-size: 65%;
 }
 
-#detdtyqhyt .gt_footnote_marks {
+#unhhtewqyy .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#detdtyqhyt .gt_asterisk {
+#unhhtewqyy .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#detdtyqhyt .gt_indent_1 {
+#unhhtewqyy .gt_indent_1 {
   text-indent: 5px;
 }
 
-#detdtyqhyt .gt_indent_2 {
+#unhhtewqyy .gt_indent_2 {
   text-indent: 10px;
 }
 
-#detdtyqhyt .gt_indent_3 {
+#unhhtewqyy .gt_indent_3 {
   text-indent: 15px;
 }
 
-#detdtyqhyt .gt_indent_4 {
+#unhhtewqyy .gt_indent_4 {
   text-indent: 20px;
 }
 
-#detdtyqhyt .gt_indent_5 {
+#unhhtewqyy .gt_indent_5 {
   text-indent: 25px;
 }
 
-#detdtyqhyt .katex-display {
+#unhhtewqyy .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#detdtyqhyt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#unhhtewqyy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="gt_col_headings header">
+<th id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="stat_1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Guinea</strong><br>
+N = 2,086<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Guinea 2</strong><br>
+N = 10<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Italy</strong><br>
+N = 708<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_4" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Liberia</strong><br>
+N = 1,540<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_5" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Liberia 2</strong><br>
+N = 536<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_6" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Mali</strong><br>
+N = 1,234<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_7" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Nigeria</strong><br>
+N = 2,124<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_8" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Senegal</strong><br>
+N = 2,081<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_9" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Sierra Leone</strong><br>
+N = 2,303<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_10" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Spain</strong><br>
+N = 1,924<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_11" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>United Kingdom</strong><br>
+N = 1,107<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_12" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>United States of America</strong><br>
+N = 1,932<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Indicator</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_5"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_6"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_7"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_8"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_9"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_10"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_11"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_12"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Case fatality rate (CFR) of confirmed Ebola cases</td>
+<td class="gt_row gt_center" headers="stat_1">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">4 (0.3%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_8">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_9">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Case fatality rate (CFR) of confirmed, probable and suspected Ebola cases</td>
+<td class="gt_row gt_center" headers="stat_1">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">4 (0.3%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_8">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_9">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Case fatality rate (CFR) of probable Ebola cases</td>
+<td class="gt_row gt_center" headers="stat_1">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">4 (0.3%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_8">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_9">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Case fatality rate (CFR) of suspected Ebola cases</td>
+<td class="gt_row gt_center" headers="stat_1">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">4 (0.3%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_8">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_9">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cumulative number of confirmed Ebola cases</td>
+<td class="gt_row gt_center" headers="stat_1">259 (12%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (10%)</td>
+<td class="gt_row gt_center" headers="stat_3">141 (20%)</td>
+<td class="gt_row gt_center" headers="stat_4">258 (17%)</td>
+<td class="gt_row gt_center" headers="stat_5">105 (20%)</td>
+<td class="gt_row gt_center" headers="stat_6">243 (20%)</td>
+<td class="gt_row gt_center" headers="stat_7">255 (12%)</td>
+<td class="gt_row gt_center" headers="stat_8">254 (12%)</td>
+<td class="gt_row gt_center" headers="stat_9">259 (11%)</td>
+<td class="gt_row gt_center" headers="stat_10">243 (13%)</td>
+<td class="gt_row gt_center" headers="stat_11">221 (20%)</td>
+<td class="gt_row gt_center" headers="stat_12">245 (13%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cumulative number of confirmed Ebola deaths</td>
+<td class="gt_row gt_center" headers="stat_1">257 (12%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (10%)</td>
+<td class="gt_row gt_center" headers="stat_3">1 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_4">19 (1.2%)</td>
+<td class="gt_row gt_center" headers="stat_5">105 (20%)</td>
+<td class="gt_row gt_center" headers="stat_6">9 (0.7%)</td>
+<td class="gt_row gt_center" headers="stat_7">255 (12%)</td>
+<td class="gt_row gt_center" headers="stat_8">254 (12%)</td>
+<td class="gt_row gt_center" headers="stat_9">257 (11%)</td>
+<td class="gt_row gt_center" headers="stat_10">243 (13%)</td>
+<td class="gt_row gt_center" headers="stat_11">2 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_12">245 (13%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cumulative number of confirmed, probable and suspected Ebola cases</td>
+<td class="gt_row gt_center" headers="stat_1">259 (12%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (10%)</td>
+<td class="gt_row gt_center" headers="stat_3">141 (20%)</td>
+<td class="gt_row gt_center" headers="stat_4">259 (17%)</td>
+<td class="gt_row gt_center" headers="stat_5">105 (20%)</td>
+<td class="gt_row gt_center" headers="stat_6">239 (19%)</td>
+<td class="gt_row gt_center" headers="stat_7">255 (12%)</td>
+<td class="gt_row gt_center" headers="stat_8">254 (12%)</td>
+<td class="gt_row gt_center" headers="stat_9">259 (11%)</td>
+<td class="gt_row gt_center" headers="stat_10">243 (13%)</td>
+<td class="gt_row gt_center" headers="stat_11">217 (20%)</td>
+<td class="gt_row gt_center" headers="stat_12">245 (13%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cumulative number of confirmed, probable and suspected Ebola deaths</td>
+<td class="gt_row gt_center" headers="stat_1">259 (12%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (10%)</td>
+<td class="gt_row gt_center" headers="stat_3">141 (20%)</td>
+<td class="gt_row gt_center" headers="stat_4">259 (17%)</td>
+<td class="gt_row gt_center" headers="stat_5">105 (20%)</td>
+<td class="gt_row gt_center" headers="stat_6">243 (20%)</td>
+<td class="gt_row gt_center" headers="stat_7">255 (12%)</td>
+<td class="gt_row gt_center" headers="stat_8">254 (12%)</td>
+<td class="gt_row gt_center" headers="stat_9">259 (11%)</td>
+<td class="gt_row gt_center" headers="stat_10">243 (13%)</td>
+<td class="gt_row gt_center" headers="stat_11">221 (20%)</td>
+<td class="gt_row gt_center" headers="stat_12">245 (13%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cumulative number of probable Ebola cases</td>
+<td class="gt_row gt_center" headers="stat_1">259 (12%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (10%)</td>
+<td class="gt_row gt_center" headers="stat_3">141 (20%)</td>
+<td class="gt_row gt_center" headers="stat_4">258 (17%)</td>
+<td class="gt_row gt_center" headers="stat_5">71 (13%)</td>
+<td class="gt_row gt_center" headers="stat_6">242 (20%)</td>
+<td class="gt_row gt_center" headers="stat_7">255 (12%)</td>
+<td class="gt_row gt_center" headers="stat_8">253 (12%)</td>
+<td class="gt_row gt_center" headers="stat_9">259 (11%)</td>
+<td class="gt_row gt_center" headers="stat_10">238 (12%)</td>
+<td class="gt_row gt_center" headers="stat_11">221 (20%)</td>
+<td class="gt_row gt_center" headers="stat_12">238 (12%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cumulative number of probable Ebola deaths</td>
+<td class="gt_row gt_center" headers="stat_1">257 (12%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (10%)</td>
+<td class="gt_row gt_center" headers="stat_3">1 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_4">15 (1.0%)</td>
+<td class="gt_row gt_center" headers="stat_5">1 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_6">8 (0.6%)</td>
+<td class="gt_row gt_center" headers="stat_7">255 (12%)</td>
+<td class="gt_row gt_center" headers="stat_8">253 (12%)</td>
+<td class="gt_row gt_center" headers="stat_9">257 (11%)</td>
+<td class="gt_row gt_center" headers="stat_10">238 (12%)</td>
+<td class="gt_row gt_center" headers="stat_11">2 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_12">238 (12%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cumulative number of suspected Ebola cases</td>
+<td class="gt_row gt_center" headers="stat_1">259 (12%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (10%)</td>
+<td class="gt_row gt_center" headers="stat_3">141 (20%)</td>
+<td class="gt_row gt_center" headers="stat_4">258 (17%)</td>
+<td class="gt_row gt_center" headers="stat_5">1 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_6">242 (20%)</td>
+<td class="gt_row gt_center" headers="stat_7">255 (12%)</td>
+<td class="gt_row gt_center" headers="stat_8">253 (12%)</td>
+<td class="gt_row gt_center" headers="stat_9">259 (11%)</td>
+<td class="gt_row gt_center" headers="stat_10">238 (12%)</td>
+<td class="gt_row gt_center" headers="stat_11">221 (20%)</td>
+<td class="gt_row gt_center" headers="stat_12">238 (12%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cumulative number of suspected Ebola deaths</td>
+<td class="gt_row gt_center" headers="stat_1">40 (1.9%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">1 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_4">15 (1.0%)</td>
+<td class="gt_row gt_center" headers="stat_5">1 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_6">8 (0.6%)</td>
+<td class="gt_row gt_center" headers="stat_7">255 (12%)</td>
+<td class="gt_row gt_center" headers="stat_8">253 (12%)</td>
+<td class="gt_row gt_center" headers="stat_9">257 (11%)</td>
+<td class="gt_row gt_center" headers="stat_10">238 (12%)</td>
+<td class="gt_row gt_center" headers="stat_11">2 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_12">238 (12%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of confirmed Ebola cases in the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">59 (2.8%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (10%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">40 (2.6%)</td>
+<td class="gt_row gt_center" headers="stat_5">20 (3.7%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">6 (0.3%)</td>
+<td class="gt_row gt_center" headers="stat_8">5 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_9">59 (2.6%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of confirmed Ebola cases in the last 7 days</td>
+<td class="gt_row gt_center" headers="stat_1">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">2 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_9">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of confirmed Ebola deaths in the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">3 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_8">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_9">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of confirmed, probable and suspected Ebola cases in the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">59 (2.8%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (10%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">40 (2.6%)</td>
+<td class="gt_row gt_center" headers="stat_5">20 (3.7%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">6 (0.3%)</td>
+<td class="gt_row gt_center" headers="stat_8">5 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_9">59 (2.6%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of confirmed, probable and suspected Ebola cases in the last 7 days</td>
+<td class="gt_row gt_center" headers="stat_1">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">2 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_9">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of confirmed, probable and suspected Ebola deaths in the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">3 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_8">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_9">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of probable Ebola cases in the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">13 (0.6%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (10%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">13 (0.8%)</td>
+<td class="gt_row gt_center" headers="stat_5">2 (0.4%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">6 (0.3%)</td>
+<td class="gt_row gt_center" headers="stat_8">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_9">13 (0.6%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of probable Ebola cases in the last 7 days</td>
+<td class="gt_row gt_center" headers="stat_1">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">2 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_9">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of probable Ebola deaths in the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">3 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_8">1 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_9">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of suspected Ebola cases in the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">10 (0.5%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">10 (0.6%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">5 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_8">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_9">10 (0.4%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of suspected Ebola cases in the last 7 days</td>
+<td class="gt_row gt_center" headers="stat_1">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">2 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_9">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Number of suspected Ebola deaths in the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">3 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_8">1 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_9">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of confirmed Ebola cases that are from the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">10 (0.5%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">10 (0.6%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">6 (0.3%)</td>
+<td class="gt_row gt_center" headers="stat_8">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_9">10 (0.4%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of confirmed Ebola cases that are from the last 7 days</td>
+<td class="gt_row gt_center" headers="stat_1">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">2 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_9">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of confirmed Ebola deaths that are from the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">3 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_8">1 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_9">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of confirmed, probable and suspected Ebola cases that are from the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">10 (0.5%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">10 (0.6%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">6 (0.3%)</td>
+<td class="gt_row gt_center" headers="stat_8">5 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_9">10 (0.4%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of confirmed, probable and suspected Ebola cases that are from the last 7 days</td>
+<td class="gt_row gt_center" headers="stat_1">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">2 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_9">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of confirmed, probable and suspected Ebola deaths that are from the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">3 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_8">1 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_9">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of probable Ebola cases that are from the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">10 (0.5%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">10 (0.6%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">6 (0.3%)</td>
+<td class="gt_row gt_center" headers="stat_8">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_9">10 (0.4%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of probable Ebola cases that are from the last 7 days</td>
+<td class="gt_row gt_center" headers="stat_1">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">2 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_9">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of probable Ebola deaths that are from the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">3 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_9">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of suspected Ebola cases that are from the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">10 (0.5%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">10 (0.6%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">5 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_8">4 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_9">10 (0.4%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of suspected Ebola cases that are from the last 7 days</td>
+<td class="gt_row gt_center" headers="stat_1">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">2 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_9">2 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Proportion of suspected Ebola deaths that are from the last 21 days</td>
+<td class="gt_row gt_center" headers="stat_1">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_4">3 (0.2%)</td>
+<td class="gt_row gt_center" headers="stat_5">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_6">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_7">1 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_9">3 (0.1%)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_12">0 (0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">value</td>
+<td class="gt_row gt_center" headers="stat_1">453 (193, 2,522)</td>
+<td class="gt_row gt_center" headers="stat_2">3 (2, 4)</td>
+<td class="gt_row gt_center" headers="stat_3">0 (0, 1)</td>
+<td class="gt_row gt_center" headers="stat_4">3,151 (1,879, 5,574)</td>
+<td class="gt_row gt_center" headers="stat_5">2 (2, 6)</td>
+<td class="gt_row gt_center" headers="stat_6">6 (1, 7)</td>
+<td class="gt_row gt_center" headers="stat_7">7 (1, 19)</td>
+<td class="gt_row gt_center" headers="stat_8">0 (0, 1)</td>
+<td class="gt_row gt_center" headers="stat_9">2,285 (208, 4,234)</td>
+<td class="gt_row gt_center" headers="stat_10">0 (0, 1)</td>
+<td class="gt_row gt_center" headers="stat_11">0 (0, 1)</td>
+<td class="gt_row gt_center" headers="stat_12">1 (0, 2)</td>
+</tr>
+</tbody><tfoot class="gt_footnotes">
+<tr class="odd">
+<td colspan="13" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> n (%); Median (Q1, Q3)</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+<p><code>@tbl-one</code> contains descriptive statistics for the ebola dataset for variables “value” and “Indicator” by Country</p>
+<ul>
+<li>Fit a regression and present well-formatted results from the regression</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create a regression for ebola dataset using gtsummary</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-two</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Univariate Regression"</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl_uvregression</span>(</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  ebola, </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> value,</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">include =</span> <span class="fu">c</span>(Country, Indicator,</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>              Date, value),</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> lm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fanggkflmp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fanggkflmp table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#fanggkflmp thead, #fanggkflmp tbody, #fanggkflmp tfoot, #fanggkflmp tr, #fanggkflmp td, #fanggkflmp th {
+  border-style: none;
+}
+
+#fanggkflmp p {
+  margin: 0;
+  padding: 0;
+}
+
+#fanggkflmp .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#fanggkflmp .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#fanggkflmp .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#fanggkflmp .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#fanggkflmp .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#fanggkflmp .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#fanggkflmp .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#fanggkflmp .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#fanggkflmp .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#fanggkflmp .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#fanggkflmp .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#fanggkflmp .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#fanggkflmp .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#fanggkflmp .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#fanggkflmp .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fanggkflmp .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#fanggkflmp .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#fanggkflmp .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#fanggkflmp .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fanggkflmp .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#fanggkflmp .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fanggkflmp .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#fanggkflmp .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fanggkflmp .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#fanggkflmp .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fanggkflmp .gt_left {
+  text-align: left;
+}
+
+#fanggkflmp .gt_center {
+  text-align: center;
+}
+
+#fanggkflmp .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#fanggkflmp .gt_font_normal {
+  font-weight: normal;
+}
+
+#fanggkflmp .gt_font_bold {
+  font-weight: bold;
+}
+
+#fanggkflmp .gt_font_italic {
+  font-style: italic;
+}
+
+#fanggkflmp .gt_super {
+  font-size: 65%;
+}
+
+#fanggkflmp .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#fanggkflmp .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#fanggkflmp .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#fanggkflmp .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#fanggkflmp .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#fanggkflmp .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#fanggkflmp .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#fanggkflmp .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#fanggkflmp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3144,7 +4235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p><strong>?@tbl-two</strong> contains univariate regression results from the ebola dataset</p>
+<p><code>@tbl-two</code> contains univariate regression results from the ebola dataset</p>
 <ul>
 <li><p>Create a figure</p>
 <div class="cell">
@@ -3153,7 +4244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="fig-hist" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Final-Project-Quarto-Doc_files/figure-html/fig-hist-1.png" class="img-fluid figure-img" width="672">
+<img src="Final-Project-Quarto-Doc2_files/figure-html/fig-hist-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: ebola count
@@ -3175,12 +4266,13 @@ Figure&nbsp;1: ebola count
 <ul>
 <li><p>Inline R code</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">inline_text</span>(table1, <span class="at">variable =</span> <span class="st">"Indicator"</span>, <span class="at">column =</span> <span class="st">"Italy"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">inline_text</span>(table1, <span class="at">variable =</span> <span class="st">"Indicator"</span>, <span class="at">level =</span> <span class="st">"Case fatality rate (CFR) of confirmed Ebola cases"</span>, <span class="at">column =</span> <span class="st">"Italy"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] NA</code></pre>
+<pre><code>[1] "0 (0%)"</code></pre>
 </div>
 </div></li>
 </ul>
+<p>There were 17585 data entries</p>
 </section>
 
 </main>
