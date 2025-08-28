@@ -30,5 +30,12 @@ tbl_uvregression(
   exponentiate = TRUE))
 #FIX this ^^
 
+#create a figure (histogram)
+#| label: fig-hist
+#| fig-cap: "ebola count"
+hist(ebola$value)
 
+mean <- nrow(ebola)
+stats <- list(n = nrow(ebola),
+              mean_value = mean(ebola$value))
   

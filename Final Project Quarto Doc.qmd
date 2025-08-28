@@ -26,6 +26,10 @@ You can add options to executable code like this
 
 The `echo: false` option disables the printing of code (only output is displayed).
 
+**The Dataset:**
+
+This dataset contains the total number of probable, confirmed and suspected Ebola cases and deaths in Guinea, Liberia, Sierra Leone, Nigeria, Senegal, Mali, Spain USA, UK and Italy according to the World Health Organization. This was sourced via the [Humanitarian Data Exchange](https://data.humdata.org/dataset/ebola-cases-2014).
+
 **Descriptive Statistics**
 
 -   Read in dataset & save file
@@ -41,15 +45,11 @@ install.packages("tidyverse")
 ebola <-(here::here("data", "ebola.csv"))
 ebola <- read.csv("data/ebola.csv")
 
-#create a full descriptive table for ebola dataset
-library(gtsummary)
-tbl_summary(
-  ebola,
-  by = Country,
-  include = c(Indicator, Date, value)) #too long
 
 #create a descriptive table for ebola dataset for variables indicator and value by country
 library(gtsummary)
+#| label: tbl-one
+#| tbl-cap: "Descriptive statistics"
 tbl_summary(
   ebola,
   by = Country,
@@ -57,18 +57,36 @@ tbl_summary(
 
 ```
 
-`@tbl-one` contains descriptive statistics for the ebola dataset for all variables by Country
-
-@tbl-two contains descriptive statistics for the ebola dataset for variables "value" and "Indicator" by Country
+`@tbl-one` contains descriptive statistics for the ebola dataset for variables "value" and "Indicator" by Country
 
 -   Fit a regression and present well-formatted results from the regression
 
 ```{r}
 #create a regression for ebola dataset using gtsummary
+#| label: tbl-two
 tbl_uvregression(
   ebola, 
   y = value,
   include = c(Country, Indicator,
               Date, value),
   method = lm)
+```
+
+@tbl-two contains univariate regression results from the ebola dataset
+
+-   Create a figure
+
+    ```{r}
+    #| label: fig-hist
+    #| fig-cap: "ebola count"
+    hist(ebola$value)
+    ```
+
+@fig-hist contains a histogram for Ebola count
+
+-   Create a function
+
+```{r}
+stats <- list(n = nrow(data),
+              mean_value = mean(ebola$value))
 ```
